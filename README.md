@@ -56,6 +56,6 @@ encontradas, de acordo com a opção especificada de contagem (c ou l).
 
 #### **Run it on terminal or open the code (main.py) and test it** 
 ```bash
-pgrepwc [-a] [-c|-l] [-p n] {palavras} [-f ficheiros]
+python3 pgrepwc [-a] [-c|-l] [-p n] {palavras} [-f ficheiros]
 ```
 
