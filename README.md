@@ -54,13 +54,8 @@ redefine-o automaticamente para o número de ficheiros. <br>
 No final, o processo pai terá de escrever para stdout o número total de ocorrências das palavras ou de linhas
 encontradas, de acordo com a opção especificada de contagem (c ou l).
 
-
-
-
-Recebe uma string com texto, e devolve uma lista com as várias palavras contidas na string, pela ordem que aparecem. 
-
 #### **Run it on terminal or open the code (main.py) and test it** 
 ```bash
-python3 -c 'from main import *; print(gerarPalavras("YOUR TEXT HERE"))'
+pgrepwc [-a] [-c|-l] [-p n] {palavras} [-f ficheiros]
 ```
 
