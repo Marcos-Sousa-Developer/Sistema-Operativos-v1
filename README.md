@@ -39,7 +39,7 @@ um processo (o processo pai) para realizar as pesquisas e contagens.
 não sejam dados ficheiros na linha de comandos (ou seja, caso não seja passada a opção -f), estes devem ser lidos
 de stdin (o comando no início da sua execução pedirá ao utilizador quem são os ficheiros a processar).
 
-Inicialmente, após a validação das opções do comando, o processo pai deve criar os processos filhos/threads
+Inicialmente, após a validação das opções do comando, o processo pai cria os processos filhos/threads
 definidos pelo nível de paralelização do comando (valor n). Estes processos/threads pesquisam as palavras nos
 ficheiros, contam as ocorrências das palavras e o número de linhas onde estas foram encontradas nos ficheiros e
 escrevem os resultados (linhas encontradas e contagens) para stdout. Os resultados das pesquisas e contagens são
@@ -51,7 +51,7 @@ ficheiro é atribuído a um só processo/thread, não havendo assim divisão do 
 processos/threads. Neste sentido, se o valor de n for superior ao número de ficheiros, o comando (o processo pai)
 redefine-o automaticamente para o número de ficheiros. <br>
 
-No final, o processo pai terá de escrever para stdout o número total de ocorrências das palavras ou de linhas
+No final, o processo pai escreve para stdout o número total de ocorrências das palavras ou de linhas
 encontradas, de acordo com a opção especificada de contagem (c ou l).
 
 #### **For process: run it on terminal** 
